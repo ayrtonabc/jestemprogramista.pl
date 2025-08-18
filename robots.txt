@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jestemprogramista.pl/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Block specific paths that shouldn't be indexed
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+
+# Allow important sections
+Allow: /#uslugi
+Allow: /#portfolio
+Allow: /#kontakt
+Allow: /#emergency-support
+Allow: /#vps-hosting
+Allow: /#corporate-info
+
+# Block client portal from search engines
+Disallow: /klient
+Disallow: /cliente

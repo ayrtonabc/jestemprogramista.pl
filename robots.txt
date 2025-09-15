@@ -4,8 +4,8 @@ Allow: /
 # Sitemap location
 Sitemap: https://jestemprogramista.pl/sitemap.xml
 
-# Optimize crawling
-Crawl-delay: 1
+# Optimize crawling for better SEO
+Crawl-delay: 0.5
 
 # Block specific paths that shouldn't be indexed
 Disallow: /api/
@@ -15,15 +15,44 @@ Disallow: /_next/
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /src/
+Disallow: /build/
+Disallow: /dist/
+Disallow: /*.json$
+Disallow: /*.map$
 
-# Allow important sections
+# Allow important sections and pages
 Allow: /#uslugi
 Allow: /#portfolio
 Allow: /#kontakt
 Allow: /#emergency-support
 Allow: /#vps-hosting
 Allow: /#corporate-info
+Allow: /strony-internetowe-warszawa
+Allow: /sklepy-internetowe
+Allow: /landing-page
+Allow: /optymalizacja-seo
+Allow: /cennik
 
 # Block client portal from search engines
 Disallow: /klient
 Disallow: /cliente
+Disallow: /dashboard
+Disallow: /login
+
+# Allow important static files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.png$
+
+# Special directives for Google
+User-agent: Googlebot
+Crawl-delay: 0.2
+Allow: /
+
+# Special directives for Bing
+User-agent: Bingbot
+Crawl-delay: 0.5
+Allow: /
